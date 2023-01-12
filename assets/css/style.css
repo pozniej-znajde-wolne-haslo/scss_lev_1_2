@@ -65,16 +65,14 @@ main .section_images img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   margin: 1rem;
 }
 .aside .first_aside, .aside .second_aside, .aside .third_aside, .aside .fourth_aside {
   border: 0.2rem solid rgba(0, 0, 255, 0.678);
   padding: 1rem;
   margin-bottom: 1rem;
-}
-.aside .first_aside, .aside .third_aside {
-  margin-right: 1rem;
+  width: 90vw;
 }
 
 .footer {
@@ -102,20 +100,14 @@ main .section_images img {
   .section_text {
     width: 70%;
   }
-  .section_images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-  }
   .aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
   }
   .aside .first_aside, .aside .second_aside, .aside .third_aside, .aside .fourth_aside {
-    width: 45%;
+    width: 47vw;
     margin: 0.5rem;
   }
 }

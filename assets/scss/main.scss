@@ -78,17 +78,14 @@ main {
 }
 
 .aside {
-    @include flex(center, center, row wrap);
+    @include flex(center, center, column nowrap);
     margin: $primary-margin;
 
     .first_aside, .second_aside, .third_aside, .fourth_aside {
         border: 0.2rem solid $darker-color;    
         padding: 1rem;
         margin-bottom: $margin-bottom;
-    }
-
-    .first_aside, .third_aside {
-        margin-right: 1rem;
+        width: 90vw;
     }
 }
 
@@ -117,15 +114,11 @@ main {
         width: 70%;
 	}
 
-	.section_images {
-        @include flex(center, center, column wrap);
-	}
-
 	.aside {
-        @include flex(center, center, column wrap);
+        @include flex(center, center, row wrap);
 
         .first_aside, .second_aside, .third_aside, .fourth_aside {
-            width: 45%;
+            width: 47vw;
             margin: 0.5rem;
         }
 	}
